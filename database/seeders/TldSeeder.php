@@ -1,0 +1,162 @@
+<?php
+
+namespace Saidtech\Routereseller\Database\Seeders;
+
+use Saidtech\Routereseller\Models\Tld;
+use Illuminate\Database\Seeder;
+
+class TldSeeder extends Seeder
+{
+    public function run(): void
+    {
+        $tlds = [
+            [
+                'name' => '.com',
+                'registrar' => 'namecheap',
+                'register_price' => 12.99,
+                'renewal_price' => 14.99,
+                'transfer_price' => 12.99,
+                'min_years' => 1,
+                'max_years' => 10,
+                'is_active' => true,
+                'supports_privacy' => true,
+                'supports_transfer' => true,
+                'requirements' => [],
+                'sort_order' => 1,
+            ],
+            [
+                'name' => '.net',
+                'registrar' => 'namecheap',
+                'register_price' => 14.99,
+                'renewal_price' => 16.99,
+                'transfer_price' => 14.99,
+                'min_years' => 1,
+                'max_years' => 10,
+                'is_active' => true,
+                'supports_privacy' => true,
+                'supports_transfer' => true,
+                'requirements' => [],
+                'sort_order' => 2,
+            ],
+            [
+                'name' => '.org',
+                'registrar' => 'namecheap',
+                'register_price' => 13.99,
+                'renewal_price' => 15.99,
+                'transfer_price' => 13.99,
+                'min_years' => 1,
+                'max_years' => 10,
+                'is_active' => true,
+                'supports_privacy' => true,
+                'supports_transfer' => true,
+                'requirements' => [],
+                'sort_order' => 3,
+            ],
+            [
+                'name' => '.info',
+                'registrar' => 'namecheap',
+                'register_price' => 11.99,
+                'renewal_price' => 13.99,
+                'transfer_price' => 11.99,
+                'min_years' => 1,
+                'max_years' => 10,
+                'is_active' => true,
+                'supports_privacy' => true,
+                'supports_transfer' => true,
+                'requirements' => [],
+                'sort_order' => 4,
+            ],
+            [
+                'name' => '.biz',
+                'registrar' => 'namecheap',
+                'register_price' => 12.99,
+                'renewal_price' => 14.99,
+                'transfer_price' => 12.99,
+                'min_years' => 1,
+                'max_years' => 10,
+                'is_active' => true,
+                'supports_privacy' => true,
+                'supports_transfer' => true,
+                'requirements' => [],
+                'sort_order' => 5,
+            ],
+            [
+                'name' => '.co',
+                'registrar' => 'namecheap',
+                'register_price' => 24.99,
+                'renewal_price' => 26.99,
+                'transfer_price' => 24.99,
+                'min_years' => 1,
+                'max_years' => 10,
+                'is_active' => true,
+                'supports_privacy' => true,
+                'supports_transfer' => true,
+                'requirements' => [],
+                'sort_order' => 6,
+            ],
+            [
+                'name' => '.io',
+                'registrar' => 'namecheap',
+                'register_price' => 39.99,
+                'renewal_price' => 41.99,
+                'transfer_price' => 39.99,
+                'min_years' => 1,
+                'max_years' => 10,
+                'is_active' => true,
+                'supports_privacy' => true,
+                'supports_transfer' => true,
+                'requirements' => [],
+                'sort_order' => 7,
+            ],
+            [
+                'name' => '.me',
+                'registrar' => 'namecheap',
+                'register_price' => 19.99,
+                'renewal_price' => 21.99,
+                'transfer_price' => 19.99,
+                'min_years' => 1,
+                'max_years' => 10,
+                'is_active' => true,
+                'supports_privacy' => true,
+                'supports_transfer' => true,
+                'requirements' => [],
+                'sort_order' => 8,
+            ],
+            [
+                'name' => '.tv',
+                'registrar' => 'namecheap',
+                'register_price' => 29.99,
+                'renewal_price' => 31.99,
+                'transfer_price' => 29.99,
+                'min_years' => 1,
+                'max_years' => 10,
+                'is_active' => true,
+                'supports_privacy' => true,
+                'supports_transfer' => true,
+                'requirements' => [],
+                'sort_order' => 9,
+            ],
+            [
+                'name' => '.cc',
+                'registrar' => 'namecheap',
+                'register_price' => 9.99,
+                'renewal_price' => 11.99,
+                'transfer_price' => 9.99,
+                'min_years' => 1,
+                'max_years' => 10,
+                'is_active' => true,
+                'supports_privacy' => true,
+                'supports_transfer' => true,
+                'requirements' => [],
+                'sort_order' => 10,
+            ],
+        ];
+
+        foreach ($tlds as $tld) {
+            Tld::updateOrCreate(
+                ['name' => $tld['name']],
+                $tld
+            );
+        }
+    }
+}

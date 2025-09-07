@@ -1,0 +1,26 @@
+{
+    "name": "saidtech/routereseller",
+    "description": "This is the Laravel package for reselling domains inside Laravel Project",
+    "type": "package",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Saidtech\\Routereseller\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Saidtech\\Routereseller\\Providers\\RoutesellerServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Idrisa John",
+            "email": "idrisajohn19@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
